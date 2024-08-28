@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import BaseLayOutTemplate from "@/components/templetes/BaseLayOutTemplate";
+import '../../public/style/nomalizeStyle.css'
+import {inter} from "@/constant/font";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,18 +13,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="ko">
-      <body>
-      <nav>
-        <ul>
-          <li>nav1</li>
-        </ul>
-      </nav>
-      {children}
-      <footer>
-        <ol>THIS IS FOTTER</ol>
-      </footer>
+      <body className={inter.className}>
+        <BaseLayOutTemplate>
+            {children}
+        </BaseLayOutTemplate>
       </body>
     </html>
   );

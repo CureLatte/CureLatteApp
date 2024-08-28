@@ -1,3 +1,9 @@
+'use client'
+import {HamburgerIcon} from "@/components/atoms/HamburgerIcon";
+
 export default function HomeNextJSPages(){
-    return <h1> THIS IS HOME!</h1>
+    return <>
+        <HamburgerIcon></HamburgerIcon>
+        <h1> THIS IS HOME!</h1>
+        </>
 }
