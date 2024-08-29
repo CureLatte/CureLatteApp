@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@swc/plugin-styled-components": "^3.0.0",
     "babel-plugin-styled-components": "^2.1.4",
+    "bootstrap": "^5.3.3",
     "next": "14.2.5",
     "react": "^18",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
     "styled-components": "^6.1.12"
   },

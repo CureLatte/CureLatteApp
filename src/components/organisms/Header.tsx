@@ -1,11 +1,9 @@
 'use client'
 
 import styled from "styled-components";
-import LogoMain from "@/components/atoms/LogoMain";
 import ProfileHeader from "../moecules/ProfileHeader";
 import SearchBar from "../moecules/SearchBar";
-import Title1 from "../atoms/Title1";
-import {WHITE_0, WHITE_GRAY_1} from "@/constant/color";
+import {WHITE_0} from "@/constant/color";
 import SettingHeader from "@/components/moecules/SettingHeader";
 import NotificationHeader from "@/components/moecules/NotificationHeader";
 import HeaderTitle from "@/components/moecules/HeaderTitle";

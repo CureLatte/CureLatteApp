@@ -1,6 +1,6 @@
 'use client'
 
-import Title1 from "@/components/atoms/Title1";
+import Title1 from "@/components/atoms/text/Title1";
 import styled from "styled-components";
 
 

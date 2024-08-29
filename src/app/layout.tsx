@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import BaseLayOutTemplate from "@/components/templetes/BaseLayOutTemplate";
+import type {Metadata} from "next";
 import '../../public/style/nomalizeStyle.css'
 import {inter} from "@/constant/font";
+import StyledComponentsRegistry from "../../lib/registry";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <BaseLayOutTemplate>
+        <StyledComponentsRegistry>
             {children}
-        </BaseLayOutTemplate>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

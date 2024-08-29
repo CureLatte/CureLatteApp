@@ -1,7 +1,7 @@
 'use client'
 
-import {SearchIcon} from "@/components/atoms/SearchIcon";
-import SearchInput from "@/components/atoms/SearchInput";
+import {SearchIcon} from "@/components/atoms/icon/SearchIcon";
+import SearchInput from "@/components/atoms/input/SearchInput";
 import styled from "styled-components";
 import {WHITE_GRAY_1} from "@/constant/color";
 

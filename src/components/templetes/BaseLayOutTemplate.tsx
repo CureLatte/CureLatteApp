@@ -3,9 +3,9 @@
 import SideBar from "@/components/organisms/SideBar";
 import Header from "@/components/organisms/Header";
 import styled from "styled-components";
-import LogoMain from "@/components/atoms/LogoMain";
 import Menu from "@/components/organisms/Menu";
-import {GRAY_1, GRAY_2, WHITE_0, WHITE_GRAY_1, WHITE_GRAY_2} from "@/constant/color";
+import {GRAY_2, WHITE_GRAY_2} from "@/constant/color";
+import MenuLogo from "@/components/moecules/MenuLogo";
 
 
 const BaseLayOutStyle = styled.div`
@@ -20,7 +20,7 @@ export default function BaseLayOutTemplate({children}: any){
 
     return <BaseLayOutStyle>
         <SideBar>
-            <LogoMain></LogoMain>
+            <MenuLogo></MenuLogo>
             <Menu></Menu>
         </SideBar>
         <div style={{

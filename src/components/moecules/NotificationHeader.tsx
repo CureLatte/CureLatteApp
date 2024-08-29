@@ -1,6 +1,6 @@
 'use client'
 
-import NotificationIcon from "@/components/atoms/NotificationIcon";
+import NotificationIcon from "@/components/atoms/icon/NotificationIcon";
 import styled from "styled-components";
 import {WHITE_GRAY_1} from "@/constant/color";
 

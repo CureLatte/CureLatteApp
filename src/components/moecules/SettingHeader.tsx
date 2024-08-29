@@ -1,9 +1,9 @@
 'use client'
 
 
-import SettingIcon from "@/components/atoms/SettingIcon";
+import SettingIcon from "@/components/atoms/icon/SettingIcon";
 import styled from "styled-components";
-import {GRAY_1, WHITE_GRAY_1} from "@/constant/color";
+import {WHITE_GRAY_1} from "@/constant/color";
 
 const SettingHeaderStyle = styled.div`
     width: 50px;

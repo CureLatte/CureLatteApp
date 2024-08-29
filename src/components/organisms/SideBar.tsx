@@ -1,10 +1,7 @@
 'use client'
 
-import {ReactNode} from "react";
-import LogoMain from "@/components/atoms/LogoMain";
 import styled from "styled-components";
-import Menu from "@/components/organisms/Menu";
-import {WHITE_0, WHITE_GRAY_1} from "@/constant/color";
+import {WHITE_0} from "@/constant/color";
 
 const SideBarStyle = styled.nav`
     width: 250px;

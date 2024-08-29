@@ -1,11 +1,7 @@
-import Image from "next/image";
-import HomeNextJSPages from "@/pages/HomeNextJSPages";
-import DashBoardTemplate from "@/components/templetes/DashBoardTemplate";
+import HomePages from "@/components/pages/HomePages";
 
 export default function Home() {
   return (
-    <>
-      <DashBoardTemplate></DashBoardTemplate>
-    </>
+      <HomePages></HomePages>
   );
 }

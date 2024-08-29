@@ -1,7 +1,6 @@
 'use client'
-import Title1 from "@/components/atoms/Title1";
 import MenuTitle from "@/components/moecules/MenuTItle";
-import {HomeIcon} from "@/components/atoms/HomeIcon";
+import {HomeIcon} from "@/components/atoms/icon/HomeIcon";
 import styled from "styled-components";
 
 const MenuStyle = styled.div`

@@ -1,6 +1,6 @@
 'use client'
 
-import notificationSvg from '../../../public/icons/notification1.svg'
+import notificationSvg from '../../../../public/icons/notification1.svg'
 import styled from "styled-components";
 
 const NotificationIconStyle = styled(notificationSvg)`
