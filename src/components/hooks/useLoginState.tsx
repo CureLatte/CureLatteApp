@@ -8,11 +8,12 @@ export default function useLoginState() {
     const {user, setUser} = useContext(UserContext)
 
     if(typeof window === 'undefined'){
-        return
+        return null
     }
 
     if(!user){
-        return window.location.href='/'
+        window.location.href='/'
+        return null
     }
 
     // login 성공
