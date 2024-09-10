@@ -1,10 +1,11 @@
 'use client'
 
-import DashBoardTemplate from "@/components/templetes/DashBoardTemplate";
+import useLoginState from "@/components/hooks/useLoginState";
 
 export default function DashBoardPage() {
+    const user = useLoginState()
 
-    return <DashBoardTemplate>
+    return <>
         THIS IS DashBoard
-    </DashBoardTemplate>
+    </>
 }

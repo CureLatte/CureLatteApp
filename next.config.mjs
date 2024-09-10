@@ -11,6 +11,7 @@ const nextConfig = {
     compiler: {
     styledComponents: true,
   },
+    reactStrictMode: false
 };
 
 export default nextConfig;
