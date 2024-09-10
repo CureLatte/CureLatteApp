@@ -4,6 +4,8 @@ export const GRAY_1 = '#C5C5CF'
 export const GRAY_2 = '#E5E5E5'
 
 
+export const SKY_1 = '#e0f6ff'
+
 export const PRIMARY_3 = '#2D60FF'
 
 export const PRIMARY_2 = '#718EBF'
