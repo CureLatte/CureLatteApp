@@ -7,6 +7,10 @@ export default function useLoginState() {
 
     const {user, setUser} = useContext(UserContext)
 
+    if(typeof window === 'undefined'){
+        return
+    }
+
     if(!user){
         return window.location.href='/'
     }

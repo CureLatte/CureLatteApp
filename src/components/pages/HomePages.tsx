@@ -8,7 +8,10 @@ export default function HomePages({children}: any) {
 
     useEffect(()=>{
         if(user){
-            window.location.href='/dashboard'
+            if(typeof window !== "undefined"){
+                window.location.href='/dashboard'
+            }
+
         }
     }, [])
 
