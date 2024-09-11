@@ -5,7 +5,7 @@ import TextInput from "@/components/atoms/input/TextInput";
 import HeadingSemiBold28pxText from "@/components/atoms/text/HeadingSemiBold28pxText";
 import BodyRegular16pxText from "@/components/atoms/text/BodyRegular16pxText";
 
-export default function InputBox({style, title, width, placeholder}: any){
+export default function InputBox({style, title, width, placeholder, type}: any){
 
     const InputBoxStyle = styled.div`
         display: flex;
@@ -20,7 +20,7 @@ export default function InputBox({style, title, width, placeholder}: any){
     return (
         <InputBoxStyle style={style}>
             <BodyRegular16pxText text={title}></BodyRegular16pxText>
-            <TextInput width={width} placeholder={placeholder}></TextInput>
+            <TextInput width={width} placeholder={placeholder} type={type}></TextInput>
         </InputBoxStyle>
     )
 }

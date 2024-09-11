@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {GRAY_1, GRAY_2, PRIMARY_2} from "@/constant/color";
 
 
-export default function TextInput ({width, placeholder} : any) {
+export default function TextInput ({width, placeholder, type} : any) {
 
     const TextInputStyle = styled.input`
         width: calc(${width? width : "100%"} - 20px);
@@ -18,5 +18,5 @@ export default function TextInput ({width, placeholder} : any) {
             color: ${PRIMARY_2};
         }
     `
-    return (<TextInputStyle placeholder={placeholder}></TextInputStyle>)
+    return (<TextInputStyle placeholder={placeholder} type={type}></TextInputStyle>)
 }

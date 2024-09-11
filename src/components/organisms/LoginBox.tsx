@@ -30,8 +30,8 @@ export default function LoginBox({}: any) {
     return (
         <LoginBoxStyle>
             <LogoMain></LogoMain>
-            <InputBox width={'418px'} title={'ID'} placeholder={'Email Address'}></InputBox>
-            <InputBox width={'418px'} title={'Password'} placeholder={'Password'}></InputBox>
+            <InputBox width={'418px'} title={'ID'} placeholder={'Email Address'} type={'email'}></InputBox>
+            <InputBox width={'418px'} title={'Password'} placeholder={'Password'} type={'password'}></InputBox>
             <div style={{display: 'flex', justifyContent:'start', width: '418px'}}>
                 <ToggleSwitchBox title={'remember info'}></ToggleSwitchBox>
             </div>
