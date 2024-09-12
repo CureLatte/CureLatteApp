@@ -12,6 +12,8 @@ COPY ./node_modules ./node_modules
 # dist file COPY
 COPY ./.next ./.next
 
+# public file update
+COPY ./public ./public
 
 CMD ["npm", "run", "start"]
 
