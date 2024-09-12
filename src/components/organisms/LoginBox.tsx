@@ -39,7 +39,6 @@ export default function LoginBox({}: any) {
                 <GrayButton title={'Sign up'} onClick={()=>{}}></GrayButton>
                 <PrimaryButton title={'Login in'} onClick={()=>{
                     setUser({id:'1'})
-                    console.log('user =====>', user)
                 }}></PrimaryButton>
             </div>
 
