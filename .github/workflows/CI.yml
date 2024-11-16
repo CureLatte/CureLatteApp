@@ -64,7 +64,6 @@ jobs:
 
 
   delploy:
-    steps:
       name: 'front distribute'
       runs-on: ubuntu-latest
 
