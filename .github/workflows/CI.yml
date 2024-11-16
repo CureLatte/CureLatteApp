@@ -67,10 +67,9 @@ jobs:
   delploy:
       name: 'front distribute'
       runs-on: ubuntu-latest
-
+      needs: [build]
       steps:
         - uses: actions/checkout@v2
-
         - name: ssh Connect
           uses: appleboy/ssh-action@master
           with:
