@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import {GRAY_1, GRAY_2} from "@/constant/color";
 
-export default function GrayButton({onClick, title}:any){
+export default function GrayButton({onClick, title, style}:any){
 
     const GrayButtonStyle = styled.button`
         width: 160px;
@@ -15,7 +15,7 @@ export default function GrayButton({onClick, title}:any){
     `
 
     return (
-        <GrayButtonStyle onClick={onClick} >
+        <GrayButtonStyle onClick={onClick} style={style} >
             {title}
         </GrayButtonStyle>
     )

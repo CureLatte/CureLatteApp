@@ -1,9 +1,11 @@
 'use client'
 
-import LoginBox from "@/components/organisms/LoginBox";
+import CenterModalTemplate from "@/components/organisms/CenterModalTemplate";
 import {ThemeContext} from "../context/ThemeContext";
 import {useContext, useEffect} from "react";
 import styled from "styled-components";
+import PrimaryButton from "@/components/atoms/button/PrimaryButton";
+import LoginFormat from "@/components/organisms/LoginFormat";
 
 export default function LoginPage({}:any){
     const { theme, setTheme } = useContext(ThemeContext);
@@ -23,10 +25,11 @@ export default function LoginPage({}:any){
         height: 100vh;
     `
 
-
     return (
         <HomeTemplateStyle>
-            <LoginBox></LoginBox>
+            <CenterModalTemplate>
+                <LoginFormat></LoginFormat>
+            </CenterModalTemplate>
         </HomeTemplateStyle>
 
     )

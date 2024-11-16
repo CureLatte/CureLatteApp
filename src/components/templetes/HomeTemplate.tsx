@@ -1,9 +1,9 @@
 'use client'
 
-import LoginBox from "@/components/organisms/LoginBox";
+import CenterModalTemplate from "@/components/organisms/CenterModalTemplate";
 import styled from "styled-components";
 
-export default function HomeTemplate(){
+export default function HomeTemplate({children}: any){
 
     const HomeTemplateStyle = styled.div`
         display: flex;
@@ -16,8 +16,7 @@ export default function HomeTemplate(){
 
     return (
         <HomeTemplateStyle>
-            <LoginBox>
-            </LoginBox>
+                {children}
         </HomeTemplateStyle>
     )
 }

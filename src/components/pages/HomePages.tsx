@@ -1,5 +1,5 @@
 'use client'
-import HomeTemplate from "@/components/templetes/HomeTemplates";
+import HomeTemplates from "@/components/templetes/HomeTemplate";
 import {useEffect, useState} from "react";
 
 export default function HomePages({children}: any) {
@@ -9,13 +9,12 @@ export default function HomePages({children}: any) {
     useEffect(()=>{
         if(user){
             if(typeof window !== "undefined"){
-                window.location.href='/dashboard'
+                // window.location.href='/dashboard'
             }
 
         }
     }, [])
 
-    return <HomeTemplate>
-
-    </HomeTemplate>
+    return <HomeTemplates>
+    </HomeTemplates>
 }
