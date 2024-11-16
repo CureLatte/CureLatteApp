@@ -80,10 +80,11 @@ jobs:
             port: ${{ secrets.JS_PORT }}
             password: ${{ secrets.JS_PASSWORD }}
             passphrase: ${{ secrets.JS_PASSPHRASE }}
-            script:
-              whoami ||
-              cd ~/CureLatteApp ||
-              docker ps ||
-              docker-compose down ||
+            script: |
+              whoami
+              ls
+              cd ~/CureLatteApp
+              docker ps 
+              docker-compose down 
               
-              docker-compose up -d ||
+              docker-compose up -d
