@@ -78,6 +78,7 @@ jobs:
             key: ${{ secrets.JS_KEY }}
             port: ${{ secrets.JS_PORT }}
             password: ${{ secrets.JS_PASSWORD }}
+            passphrase: ${{ secrets.JS_PASSPHRASE }}
             script:
               whoami 
               cd ~/CureLatteApp
