@@ -60,3 +60,29 @@ jobs:
           push: true
           context: .
           no-cache: true
+
+
+
+  delploy:
+    steps:
+      name: 'front distribute'
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v2
+
+        - name: ssh Connect
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.JS_HOST }}
+            username: ${{ secrets.USER }}
+            key: ${{ secrets.JS_KEY }}
+            port: ${{ secrets.JS_PORT }}
+            password: ${{ secrets.JS_PASSWORD }}
+            script:
+              whoami 
+              cd ~/CureLatteApp
+              docker ps
+              docker-compose down
+              
+              docker-compose up -d

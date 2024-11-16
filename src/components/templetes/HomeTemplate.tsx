@@ -1,6 +1,6 @@
 'use client'
 
-import CenterModalTemplate from "@/components/organisms/CenterModalTemplate";
+import CenterModalTemplate from "@/components/templetes/CenterModalTemplate";
 import styled from "styled-components";
 
 export default function HomeTemplate({children}: any){

@@ -1,6 +1,6 @@
 'use client'
 
-import CenterModalTemplate from "@/components/organisms/CenterModalTemplate";
+import CenterModalTemplate from "@/components/templetes/CenterModalTemplate";
 import {ThemeContext} from "../context/ThemeContext";
 import {useContext, useEffect} from "react";
 import styled from "styled-components";

@@ -1,4 +1,4 @@
-import CenterModalTemplate from "@/components/organisms/CenterModalTemplate";
+import CenterModalTemplate from "@/components/templetes/CenterModalTemplate";
 import React from "react";
 import HomeTemplate from "@/components/templetes/HomeTemplate";
 import IndexFormat from "@/components/organisms/IndexFormat";
