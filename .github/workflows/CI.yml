@@ -8,6 +8,7 @@ jobs:
     name: 'front build'
     runs-on: ubuntu-latest
 
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -80,9 +81,9 @@ jobs:
             password: ${{ secrets.JS_PASSWORD }}
             passphrase: ${{ secrets.JS_PASSPHRASE }}
             script:
-              whoami 
-              cd ~/CureLatteApp
-              docker ps
-              docker-compose down
+              whoami ||
+              cd ~/CureLatteApp ||
+              docker ps ||
+              docker-compose down ||
               
-              docker-compose up -d
+              docker-compose up -d ||
