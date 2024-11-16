@@ -6,8 +6,8 @@ export default function ProjectDashBoardTemplate({children}: any){
 
     const ProjectDashBoardStyle = styled.div`
         background-color: #F5F7FA;
-        min-width: 100vw;
-        min-height: 100vh;
+        // max-width: 100vw;
+        // min-height: 100vh;
         
     `
 
@@ -15,7 +15,6 @@ export default function ProjectDashBoardTemplate({children}: any){
 
     return (
         <ProjectDashBoardStyle>
-
             {children}
         </ProjectDashBoardStyle>
     )
