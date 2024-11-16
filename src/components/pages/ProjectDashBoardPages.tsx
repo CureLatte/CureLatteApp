@@ -7,7 +7,15 @@ import RowSlider from "@/components/templetes/RowSlider";
 export default function ProjectDashBoardPages(){
     const [projectList, setProjectList] = useState<Element[]>([])
 
+
+
     useEffect(() => {
+
+        if(window){
+            window.alert("기능 준비중입니다.")
+            window.location.href="/"
+        }
+
         getProjectList(10)
     }, []);
 
