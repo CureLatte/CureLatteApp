@@ -3,7 +3,7 @@ import React from "react";
 import HomeTemplate from "@/components/templetes/HomeTemplate";
 import IndexFormat from "@/components/organisms/IndexFormat";
 
-export default function IndexPage(){
+export default function IndexPages(){
 
 
     return (

@@ -2,7 +2,7 @@
 
 import useLoginState from "@/components/hooks/useLoginState";
 
-export default function DashBoardPage() {
+export default function DashBoardPages() {
     const user = useLoginState()
 
 
