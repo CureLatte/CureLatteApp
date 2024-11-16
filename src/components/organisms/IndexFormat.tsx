@@ -9,9 +9,10 @@ export default function IndexFormat(){
         <>
             <div style={{display: 'flex', flexDirection:'column', alignItems:"center", gap:"30px", width: '250px', height:"150px", marginTop: '10px'}}>
                 <PrimaryButton style={{width:"100%"}} title={"프로젝트 보러가기"} onClick={() => {
-                    window.location.href="/project"
+                    window.alert("기능 준비중입니다.")
+                    // window.location.href="/project"
                 }}></PrimaryButton>
-                <GrayButton style={{width: "100%", color:"gray"}} title={"로그인 하러가기"} onClick={()=>{
+                <GrayButton style={{width: "100%",}} title={"로그인 하러가기"} onClick={()=>{
                     window.location.href="/login"
                 }}></GrayButton>
             </div>

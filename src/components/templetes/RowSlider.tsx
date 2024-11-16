@@ -66,7 +66,7 @@ export default function RowSlider({contentList}:any){
                 }
 
                 container.scrollBy({
-                    left: -200,
+                    left: -300,
                     behavior:"smooth"
                 })
                 
@@ -84,14 +84,14 @@ export default function RowSlider({contentList}:any){
 
                 <div id="observer" style={{height: "10px"}}></div>
             </ContentAnimationStyle>
-            <SliderArrow style={{}} onClick={(e) => {
+            <SliderArrow style={{}} onClick={() => {
                 const container = window.document.getElementById("container")
                 if(!container){
                     return
                 }
 
                 container.scrollBy({
-                    left: 200,
+                    left: 300,
                     behavior:"smooth"
                 })
             }}/>

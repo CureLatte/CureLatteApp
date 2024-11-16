@@ -1,15 +1,15 @@
 'use client'
 import styled from "styled-components";
-import {PRIMARY_2, PRIMARY_3} from "@/constant/color";
+import {BLUE_DARK_3, BLUE_DARK_4, DEEP_SKY_BLUE, GRAY_005, GRAY_015, PRIMARY_2, PRIMARY_3} from "@/constant/color";
 
 export default function PrimaryButton({onClick, style, title}: any) {
     const PrimaryButtonStyle = styled.button`
-        background-color: ${PRIMARY_3};
+        background-color: ${BLUE_DARK_4};
         width: 160px;
         height: 50px;
         border-radius: 15px;
         border:none;
-        color: white;
+        color: ${GRAY_015};
     `
 
     return (

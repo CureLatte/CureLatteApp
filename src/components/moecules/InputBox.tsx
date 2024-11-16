@@ -4,6 +4,7 @@ import styled from "styled-components";
 import TextInput from "@/components/atoms/input/TextInput";
 import HeadingSemiBold28pxText from "@/components/atoms/text/HeadingSemiBold28pxText";
 import BodyRegular16pxText from "@/components/atoms/text/BodyRegular16pxText";
+import {GRAY_010, GRAY_050} from "@/constant/color";
 
 export default function InputBox({style, title, width, placeholder, type}: any){
 
@@ -15,6 +16,7 @@ export default function InputBox({style, title, width, placeholder, type}: any){
         justify-content: center;
         gap: 10px;
         margin:10px;
+        color: ${GRAY_010};
     `
 
     return (

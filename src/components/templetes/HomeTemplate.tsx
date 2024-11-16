@@ -2,6 +2,7 @@
 
 import CenterModalTemplate from "@/components/templetes/CenterModalTemplate";
 import styled from "styled-components";
+import {GRAY_070, GRAY_080, GRAY_085, GRAY_090} from "@/constant/color";
 
 export default function HomeTemplate({children}: any){
 
@@ -11,7 +12,8 @@ export default function HomeTemplate({children}: any){
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        background-color: ${GRAY_080};
     `
 
     return (

@@ -1,7 +1,17 @@
 'use client'
 
 import styled from "styled-components";
-import {GRAY_1, GRAY_2, PRIMARY_2} from "@/constant/color";
+import {
+    BLUE_DARK_1,
+    BLUE_DARK_2,
+    GRAY_010,
+    GRAY_015,
+    GRAY_040, GRAY_060,
+    GRAY_090,
+    GRAY_1,
+    GRAY_2,
+    PRIMARY_2
+} from "@/constant/color";
 
 
 export default function TextInput ({width, placeholder, type} : any) {
@@ -14,8 +24,9 @@ export default function TextInput ({width, placeholder, type} : any) {
         color: black;
         font-size: 15px;
         padding-left: 20px;
+        background-color: ${GRAY_040};
         &::placeholder{
-            color: ${PRIMARY_2};
+            color: ${GRAY_010};
         }
     `
     return (<TextInputStyle placeholder={placeholder} type={type}></TextInputStyle>)

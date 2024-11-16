@@ -6,6 +6,7 @@ import {useContext, useEffect} from "react";
 import styled from "styled-components";
 import PrimaryButton from "@/components/atoms/button/PrimaryButton";
 import LoginFormat from "@/components/organisms/LoginFormat";
+import HomeTemplate from "@/components/templetes/HomeTemplate";
 
 export default function LoginPage({}:any){
     const { theme, setTheme } = useContext(ThemeContext);
@@ -16,21 +17,13 @@ export default function LoginPage({}:any){
     })
 
 
-    const HomeTemplateStyle = styled.div`
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-    `
 
     return (
-        <HomeTemplateStyle>
+        <HomeTemplate>
             <CenterModalTemplate>
                 <LoginFormat></LoginFormat>
             </CenterModalTemplate>
-        </HomeTemplateStyle>
+        </HomeTemplate>
 
     )
 }

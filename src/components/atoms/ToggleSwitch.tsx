@@ -2,7 +2,7 @@
 
 import Form from 'react-bootstrap/Form';
 import styled from "styled-components";
-import {CYAN_0, CYAN_1, WHITE_GRAY_3} from "@/constant/color";
+import {CYAN_0, CYAN_1, GRAY_005, GRAY_010, GRAY_070, WHITE_GRAY_3} from "@/constant/color";
 
 
 
@@ -18,16 +18,16 @@ export default function ToggleSwitch({title, id}:any) {
         // 배경 색
 
         .form-check-input:checked {
-            background-color: ${CYAN_0};
-            border-color: ${CYAN_0};
+            background-color: ${GRAY_070};
+            border-color: ${GRAY_070};
         }
 
         // focusing
 
         .form-check-input:focus {
-            border-color: ${CYAN_0};
+            border-color: ${GRAY_005};
             outline: 0;
-            box-shadow: 0 0 0 .25rem ${CYAN_1};
+            box-shadow: 0 0 0 .2rem ${GRAY_005};
         }
 
     `
